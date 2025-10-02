@@ -9,19 +9,19 @@ System on Chip (SoC) integrates a complete electronic system including processor
 
 * Multiple Cores: A processor with multiple cores in the form of a microcontroller, microprocessor, digital signal processor, or application-specific instruction set processor.
   
-*Memory Capabilities: Memory capabilities such as RAM, ROM, FLASH, EEPROM, and/or cache memory.
+* Memory Capabilities: Memory capabilities such as RAM, ROM, FLASH, EEPROM, and/or cache memory.
 
-*External Interfaces: External interfaces for wired communication protocols such as HDMI, USB4, FireWire, USART, SPI, I²C, or Ethernet.
+* External Interfaces: External interfaces for wired communication protocols such as HDMI, USB4, FireWire, USART, SPI, I²C, or Ethernet.
 
-*Wireless Capabilities: Wireless capabilities such as WiFi or Bluetooth and other radio frequency capabilities.
+* Wireless Capabilities: Wireless capabilities such as WiFi or Bluetooth and other radio frequency capabilities.
 
-*GPU: A Graphical Processing Unit (GPU) for accelerating specific tasks and to visualize the interface.
+* GPU: A Graphical Processing Unit (GPU) for accelerating specific tasks and to visualize the interface.
 
-*Voltage Regulation: Voltage regulators, phase lock loop (PLL) control systems, built-in oscillators, timers, and analog-to-digital (ADC) converters.
+* Voltage Regulation: Voltage regulators, phase lock loop (PLL) control systems, built-in oscillators, timers, and analog-to-digital (ADC) converters.
 
-*Intrachip Communication: Intrachip communication subsystems for connecting individual circuit blocks, such as Interface busses or newer intercommunication networks known as networks-on-chip (NoC).
+* Intrachip Communication: Intrachip communication subsystems for connecting individual circuit blocks, such as Interface busses or newer intercommunication networks known as networks-on-chip (NoC).
 
-*Signal Processing: Digital, analog, and mixed-signal processing circuit blocks for any sensors, actuators, data collection, and data analysis.
+* Signal Processing: Digital, analog, and mixed-signal processing circuit blocks for any sensors, actuators, data collection, and data analysis.
 
 ### Fundamentals of BabySoC
 
