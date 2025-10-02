@@ -84,11 +84,11 @@ Functional modelling is done before RTL and physical design to determine whether
   
          This is the top-level module that integrates the rvmyth, pll, and dac modules.
   
-         # RVMYTH: RVMYTH core is a simple RISCV-based CPU, introduced by VSD.
+          # RVMYTH: RVMYTH core is a simple RISCV-based CPU, introduced by VSD.
 
-         # PLL: A phase-locked loop or PLL is a control system that generates an output signal whose phase is related to the phase of an input signal. PLLs are widely used for synchronization purposes, including clock generation and distribution.
+          # PLL: A phase-locked loop or PLL is a control system that generates an output signal whose phase is related to the phase of an input signal. PLLs are widely used for synchronization purposes, including clock generation and distribution.
 
-         # DAC: A digital-to-analog converter or DAC is a system that converts a digital signal into an analog signal. DACs are widely used in modern communication systems enabling the generation of digitally-defined transmission signals. As a result, high-speed DACs are used for mobile communications and ultra-high-speed DACs are employed in optical communications systems.
+          # DAC: A digital-to-analog converter or DAC is a system that converts a digital signal into an analog signal. DACs are widely used in modern communication systems enabling the generation of digitally-defined transmission signals. As a result, high-speed DACs are used for mobile communications and ultra-high-speed DACs are employed in optical communications systems.
 
   - Inputs:
      - reset: Resets the core processor.
@@ -149,17 +149,17 @@ The functionality of PLL can be decribed as two processes.
         -  Output:
         -  OUT: Analog output signal.
 
-      # Steps for the designing of 10-bit DAC
+         # Steps for the designing of 10-bit DAC
 
-      - verilog avsddac.v avsddac_tb_test.v
-      - ./a.out
-      - gtkwave avsddac_tb_test.vcd
+              - verilog avsddac.v avsddac_tb_test.v
+              - ./a.out
+              - gtkwave avsddac_tb_test.vcd
 
-     # Integrating both rvymth and DAC using a Top level module and test it to verify the correctness of the integration.
+         # Integrating both rvymth and DAC using a Top level module and test it to verify the correctness of the integration.
 
-         - iverilog rvmyth_avsddac.v rvmyth_avsddac_TB.v
-         - ./a.out
-         - gtkwave rvmyth_avsddac.vcd
+              - iverilog rvmyth_avsddac.v rvmyth_avsddac_TB.v
+              - ./a.out
+              - gtkwave rvmyth_avsddac.vcd
 
     # Reference:  https://github.com/vsdip/rvmyth_avsddac_interface.git
 
