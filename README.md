@@ -1,5 +1,4 @@
 # RISC-V-tapeout-Program-Week-2
-
 Forwarding to the RISC-V , Lets's move to the WEEK 2 titled as "BabySoC Fundamentals & Functional Modelling". Week 2 is a research week whose objective is to build solid understanding of SoC fundamentals and practice functional modelling of the BabySoC using simulation tool  (Icarus verilog & GTKWave).
 
 ### Fundamentals of SoC
