@@ -163,7 +163,7 @@ The functionality of PLL can be decribed as two processes.
 
     # Reference:  https://github.com/vsdip/rvmyth_avsddac_interface.git
 
-# Testbench
+### Testbench
 The testbench.v file is a test module to verify the functionality of vsdbabysoc. It includes signal initialization, clock generation, and waveform dumping for both pre-synthesis and post-synthesis simulations. Waveform Output:
 
     - pre_synth_sim.vcd or post_synth_sim.vcd files generated based on simulation conditions.
@@ -179,3 +179,15 @@ The testbench.v file is a test module to verify the functionality of vsdbabysoc.
                    cd output/post_synth_sim
                    ./post_synth_sim.out
 
+### Steps of Hands on Lab
+
+1. Clone the BabySoC project repo.
+2. Compile the BabySoC Verilog modules using iverilog.
+3. Simulate and generate .vcd waveform files.
+4. Open .vcd files in GTKWave and analyze:
+    - Reset operation
+    - Clocking
+    - Dataflow between modules
+  
+### Acknowledgement
+I'm grateful to the VSD team for this RISC-V core tapeout program.
