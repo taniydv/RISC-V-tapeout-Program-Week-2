@@ -50,3 +50,6 @@ Functional modelling is the process of creating an abstract representation of a 
 For example: Functional model of SoC includes the details like CPU can read/write to memory, peripherals respond to the memory-mapped registers etc.
 
 Functional modelling is done before RTL and physical design to determine whether the system work as per the intended design rather than direct physical implementation. It also validates the different achitectures choices and used for fast simulation. Funcational modelling is like a blueprint of the design which contains the behavior of the design and helps to saves time and cost before the direct implementation.
+
+### Lab on Functional Modelling
+
