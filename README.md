@@ -184,12 +184,17 @@ The testbench.v file is a test module to verify the functionality of vsdbabysoc.
 ### Steps of Hands on Lab
 
 1. Clone the BabySoC project repo.
+
+<img width="767" height="576" alt="Screenshot 2025-10-03 165752" src="https://github.com/user-attachments/assets/2025db62-fbea-4f93-9fb7-33313b22aa93" />
+ 
 2. Compile the BabySoC Verilog modules using iverilog.
 3. Simulate and generate .vcd waveform files.
 4. Open .vcd files in GTKWave and analyze:
     - Reset operation
     - Clocking
     - Dataflow between modules
-  
+
+<img width="1854" height="469" alt="Screenshot 2025-10-03 105948" src="https://github.com/user-attachments/assets/c4a77417-b326-425c-9201-e9e1ee18e2fa" />
+
 ### Acknowledgement
 I'm grateful to the VSD team for this RISC-V core tapeout program.
