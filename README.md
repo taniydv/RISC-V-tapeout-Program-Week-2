@@ -199,5 +199,6 @@ The testbench.v file is a test module to verify the functionality of vsdbabysoc.
 
 <img width="1854" height="469" alt="Screenshot 2025-10-03 105948" src="https://github.com/user-attachments/assets/c4a77417-b326-425c-9201-e9e1ee18e2fa" />
 
+* "I'm facing issue while compiling vsdbabysoc.v as the submodule rvmyth.tlv requires to be converted into .v file and even after using sandpiper-saas. It is showing error like line 238 end of string line, many more."
 ### Acknowledgement
 I'm grateful to the VSD team for this RISC-V core tapeout program.
