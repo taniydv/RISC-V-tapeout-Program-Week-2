@@ -126,21 +126,21 @@ Functional modelling is done before RTL and physical design to determine whether
  
   ![pll](https://github.com/user-attachments/assets/bcd67f14-a033-4add-9430-a31a5e378e42)
 
-The functionality of PLL can be decribed as two processes.
+    The functionality of PLL can be decribed as two processes.
 
-    - Comparing frequency of reference and ouput(PFD)
+         - Comparing frequency of reference and ouput(PFD)
     
-    - Adjusting frequency to match reference signal(CP and VCO)
+         - Adjusting frequency to match reference signal(CP and VCO)
 
-    # PFD: The phase frequency detector(PFD) is responsible for comparing the reference signal given as input and the output signal. Then it should produce output which clearly shows the difference of phase. 
+          # PFD: The phase frequency detector(PFD) is responsible for comparing the reference signal given as input and the output signal. Then it should produce output which clearly shows the difference of phase. 
 
-    # Charge Pump: The CP converts the digital output from PFD to an analog signal. This analog signal is what would control the VCO. The analog ouput from CP is passed through a low pass filter before connecting to the VCO. This low pass filter can help smoothen the signal in addition to stabilizing the feedback loop.
+          # Charge Pump: The CP converts the digital output from PFD to an analog signal. This analog signal is what would control the VCO. The analog ouput from CP is passed through a low pass filter before connecting to the VCO. This low pass filter can help smoothen the signal in addition to stabilizing the feedback loop.
 
-    # VCO: Voltage controlled oscillators are the actual parts which produces alternating digital clock signal. The frequency of this clock signal can be controlled by input voltage. VCO can be implemented using simple inverters. A PLL with a frequency divider on its feedback loop is called a clock multiplier PLL. Such a PLL can make clock signals which are multiples of the reference signals.
+          # VCO: Voltage controlled oscillators are the actual parts which produces alternating digital clock signal. The frequency of this clock signal can be controlled by input voltage. VCO can be implemented using simple inverters. A PLL with a frequency divider on its feedback loop is called a clock multiplier PLL. Such a PLL can make clock signals which are multiples of the reference signals.
 
-    # Reference: [Introduction](https://github.com/ireneann713/PLL.git) [avsdpll](https://github.com/lakshmi-sathi/avsdpll_1v8.git)
+         # Reference: [Introduction](https://github.com/ireneann713/PLL.git) [avsdpll](https://github.com/lakshmi-sathi/avsdpll_1v8.git)
 
-  4) avsddav.v (DAC Module)
+   4) avsddav.v (DAC Module)
     The dac module converts the 10-bit digital signal from the rvmyth core to an analog output.
 
         - Inputs:
@@ -149,19 +149,19 @@ The functionality of PLL can be decribed as two processes.
         -  Output:
         -  OUT: Analog output signal.
 
-         # Steps for the designing of 10-bit DAC
+          # Steps for the designing of 10-bit DAC
 
               - verilog avsddac.v avsddac_tb_test.v
               - ./a.out
               - gtkwave avsddac_tb_test.vcd
 
-         # Integrating both rvymth and DAC using a Top level module and test it to verify the correctness of the integration.
+          # Integrating both rvymth and DAC using a Top level module and test it to verify the correctness of the integration.
 
               - iverilog rvmyth_avsddac.v rvmyth_avsddac_TB.v
               - ./a.out
               - gtkwave rvmyth_avsddac.vcd
 
-    # Reference:  https://github.com/vsdip/rvmyth_avsddac_interface.git
+          # Reference:  https://github.com/vsdip/rvmyth_avsddac_interface.git
 
 ### Testbench
 The testbench.v file is a test module to verify the functionality of vsdbabysoc. It includes signal initialization, clock generation, and waveform dumping for both pre-synthesis and post-synthesis simulations. Waveform Output:
@@ -178,6 +178,8 @@ The testbench.v file is a test module to verify the functionality of vsdbabysoc.
                    iverilog -o output/post_synth_sim/post_synth_sim.out -DPOST_SYNTH_SIM \-I src/include -I src/module \src/module/testbench.v output/synthesized/vsdbabysoc.synth.v
                    cd output/post_synth_sim
                    ./post_synth_sim.out
+
+#Reference :  https://github.com/hemanthkumardm/SFAL-VSD-SoC-Journey/tree/main/12.%20VSDBabySoC%20Project
 
 ### Steps of Hands on Lab
 
