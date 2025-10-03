@@ -42,6 +42,9 @@ BabySoC is important for the practical introduction to SoC design. It is conside
 
 Example: The VSDBabySoC is a simple SoC (System-on-Chip) design incorporating a RISC-V processor (rvmyth), a PLL (Phase-Locked Loop) module (pll), and a DAC (Digital-to-Analog Converter) module (dac).
 
+<img width="2270" height="1260" alt="vsdbabysoc_block_diagram" src="https://github.com/user-attachments/assets/6dac9815-2afd-4a67-8462-161e87607838" />
+
+
 ### Functional Modelling
 
 Functional modelling is the process of creating an abstract representation of a system that describes what the system does i.e its functionality rather than how it is physically implemented. It basically focuses on the behavior of the system, not on the physical and structure. 
